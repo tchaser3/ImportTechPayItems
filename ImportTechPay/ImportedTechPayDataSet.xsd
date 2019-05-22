@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImportedTechPayDataSet" targetNamespace="http://tempuri.org/ImportedTechPayDataSet.xsd" xmlns:mstns="http://tempuri.org/ImportedTechPayDataSet.xsd" xmlns="http://tempuri.org/ImportedTechPayDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImportedTechPayDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ImportedTechPayDataSet" msprop:Generator_UserDSName="ImportedTechPayDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="importedtechpay" msprop:Generator_TableClassName="importedtechpayDataTable" msprop:Generator_TableVarName="tableimportedtechpay" msprop:Generator_TablePropName="importedtechpay" msprop:Generator_RowDeletingName="importedtechpayRowDeleting" msprop:Generator_RowChangingName="importedtechpayRowChanging" msprop:Generator_RowEvHandlerName="importedtechpayRowChangeEventHandler" msprop:Generator_RowDeletedName="importedtechpayRowDeleted" msprop:Generator_UserTableName="importedtechpay" msprop:Generator_RowChangedName="importedtechpayRowChanged" msprop:Generator_RowEvArgName="importedtechpayRowChangeEvent" msprop:Generator_RowClassName="importedtechpayRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="TechPayCode" msprop:Generator_ColumnVarNameInTable="columnTechPayCode" msprop:Generator_ColumnPropNameInRow="TechPayCode" msprop:Generator_ColumnPropNameInTable="TechPayCodeColumn" msprop:Generator_UserColumnName="TechPayCode" type="xs:string" />
+              <xs:element name="JobDescription" msprop:Generator_ColumnVarNameInTable="columnJobDescription" msprop:Generator_ColumnPropNameInRow="JobDescription" msprop:Generator_ColumnPropNameInTable="JobDescriptionColumn" msprop:Generator_UserColumnName="JobDescription" type="xs:string" />
+              <xs:element name="TechPayPrice" msprop:Generator_ColumnVarNameInTable="columnTechPayPrice" msprop:Generator_ColumnPropNameInRow="TechPayPrice" msprop:Generator_ColumnPropNameInTable="TechPayPriceColumn" msprop:Generator_UserColumnName="TechPayPrice" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:importedtechpay" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
